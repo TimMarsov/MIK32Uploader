@@ -1,0 +1,54 @@
+name: Bug report
+description: Сообщить об ошибке в MIK32 Flasher
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Спасибо за сообщение. Чем точнее описание, тем быстрее получится разобраться.
+  - type: input
+    id: version
+    attributes:
+      label: Версия MIK32 Flasher
+      placeholder: "v1.0.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Операционная система
+      options:
+        - Windows
+        - Linux
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Шаги для воспроизведения
+      placeholder: |
+        1. Открыл приложение
+        2. Выбрал файл прошивки
+        3. Нажал загрузку
+        4. Получил ошибку
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Ожидаемое поведение
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Фактическое поведение
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Логи, сообщения об ошибках или скриншоты
+      render: text

@@ -1,0 +1,10 @@
+* text=auto eol=lf
+
+*.exe binary
+*.AppImage binary
+*.zip binary
+*.7z binary
+*.tar.gz binary
+
+*.bat text eol=crlf
+*.sh text eol=lf

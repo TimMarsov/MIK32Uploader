@@ -1,0 +1,23 @@
+name: Feature request
+description: Предложить улучшение MIK32 Flasher
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Какую задачу нужно решить?
+      placeholder: Опишите сценарий, в котором сейчас неудобно работать.
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Какое поведение вы ожидаете?
+      placeholder: Опишите желаемое улучшение.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Дополнительный контекст

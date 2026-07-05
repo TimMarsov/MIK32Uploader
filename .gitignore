@@ -1,0 +1,7 @@
+# Release binaries are uploaded to GitHub Releases, not committed.
+*.exe
+*.AppImage
+
+# Local build/package scratch space.
+dist/
+release/

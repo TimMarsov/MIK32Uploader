@@ -1,0 +1,43 @@
+name: Release checks
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  repository-health:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Check documentation files
+        run: |
+          test -f README.md
+          test -f CHANGELOG.md
+          test -f LICENSE.md
+          test -f EULA.md
+          test -f SECURITY.md
+          test -f THIRD_PARTY_LICENSES.md
+          test -f checksums.txt
+          test -f SUPPORT.md
+          test -f docs/installation.md
+          test -f docs/usage.md
+          test -f docs/cli.md
+          test -f docs/supported-devices.md
+          test -f docs/releases.md
+          test -f docs/troubleshooting.md
+          test -f docs/faq.md
+          test -f tests/README.md
+          test -f tests/firmware_test_windows.bat
+          test -f tests/firmware_test_linux.sh
+
+      - name: Check release checksum manifest
+        run: |
+          grep -Eq '^[0-9a-f]{64}  mik32_upload_v[0-9]+\.[0-9]+\.[0-9]+\.exe$' checksums.txt
+          grep -Eq '^[0-9a-f]{64}  MIK32_Uploader-x86_64_v[0-9]+\.[0-9]+\.[0-9]+\.AppImage$' checksums.txt
+
+      - name: Check test scripts
+        run: bash -n tests/firmware_test_linux.sh
