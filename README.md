@@ -5,7 +5,7 @@
 ---
 
 <p align="center">
-  <img src="images/devboard3.gif" alt="MIK32 devboard demo" width="640" style="border-radius: 8px;"/>
+  <img src="images/devboard3.gif" alt="MIK32 devboard demo" width="560" style="border-radius: 8px;"/>
 </p>
 
 <p align="center">
