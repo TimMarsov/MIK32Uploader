@@ -3,7 +3,7 @@
 Публичный файл:
 
 ```text
-mik32_upload_v1.0.0.exe
+mik32_upload.exe
 ```
 
 ## Перед публикацией
@@ -15,7 +15,7 @@ mik32_upload_v1.0.0.exe
 5. При наличии тестовой платы прогнать автотест из корня репозитория:
 
 ```bat
-set UPLOADER_EXE=.\release\mik32_upload_v1.0.0.exe
+set UPLOADER_EXE=.\release\mik32_upload.exe
 set OPENOCD_BIN=C:\tools\openocd\bin\openocd.exe
 set OPENOCD_SCRIPTS=C:\tools\openocd-scripts
 set EEPROM_FILE=C:\firmware\eeprom.hex
@@ -27,7 +27,7 @@ set RAM_FILE=C:\firmware\ram.hex
 6. Посчитать SHA-256 из корня репозитория:
 
 ```powershell
-Get-FileHash -Algorithm SHA256 .\release\mik32_upload_v1.0.0.exe
+Get-FileHash -Algorithm SHA256 .\release\mik32_upload.exe
 ```
 
 7. Обновить `checksums.txt` и `SECURITY.md`.

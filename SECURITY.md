@@ -2,25 +2,25 @@
 
 MIK32 Flasher распространяется в виде публичных бинарных сборок. Исходный код проекта закрыт и не публикуется в этом репозитории, поэтому проверка релизов вынесена отдельно: для каждого публичного бинарного файла должна быть опубликована контрольная сумма SHA-256 и, когда возможно, ссылка на внешнюю проверку антивирусами.
 
-## Файлы версии 1.0.0
+## Файлы версии 1.0.1
 
 | Файл | SHA-256 | Статус |
 | --- | --- | --- |
-| `mik32_upload_v1.0.0.exe` | `4470fed452f1ef0e9ba1cbf78211f6f7b349b2f806bf78a7b52b4eb0f30c750b` | Опубликован в GitHub Releases |
-| `MIK32_Uploader-x86_64_v1.0.0.AppImage` | `e20de51d972366e11f397c7b5b6dab003cda035576f6f2c7a6711286af18646a` | Опубликован в GitHub Releases |
+| `mik32_upload.exe` | `4bd81ce8813e56d351403f59b6e534d1c8c302e3960373b93cdbf3c2eeec5d34` | Опубликован в GitHub Releases |
+| `mik32_uploader.AppImage` | `58de101e5f054303539bb87f25193c58e0685dac31d8e6f2c8a545662a88a188` | Опубликован в GitHub Releases |
 
 VirusTotal:
 
-* Windows EXE: https://www.virustotal.com/gui/file/4470fed452f1ef0e9ba1cbf78211f6f7b349b2f806bf78a7b52b4eb0f30c750b
-* Linux AppImage: https://www.virustotal.com/gui/file/e20de51d972366e11f397c7b5b6dab003cda035576f6f2c7a6711286af18646a
+* Windows EXE: https://www.virustotal.com/gui/file/4bd81ce8813e56d351403f59b6e534d1c8c302e3960373b93cdbf3c2eeec5d34
+* Linux AppImage: https://www.virustotal.com/gui/file/58de101e5f054303539bb87f25193c58e0685dac31d8e6f2c8a545662a88a188
 
 ## Проверка SHA-256
 
 Windows PowerShell:
 
 ```powershell
-Get-FileHash -Algorithm SHA256 .\mik32_upload_v1.0.0.exe
-Get-FileHash -Algorithm SHA256 .\MIK32_Uploader-x86_64_v1.0.0.AppImage
+Get-FileHash -Algorithm SHA256 .\mik32_upload.exe
+Get-FileHash -Algorithm SHA256 .\mik32_uploader.AppImage
 ```
 
 Linux:

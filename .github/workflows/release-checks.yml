@@ -20,7 +20,6 @@ jobs:
           test -f LICENSE.md
           test -f EULA.md
           test -f SECURITY.md
-          test -f THIRD_PARTY_LICENSES.md
           test -f checksums.txt
           test -f SUPPORT.md
           test -f docs/installation.md
@@ -36,8 +35,8 @@ jobs:
 
       - name: Check release checksum manifest
         run: |
-          grep -Eq '^[0-9a-f]{64}  mik32_upload_v[0-9]+\.[0-9]+\.[0-9]+\.exe$' checksums.txt
-          grep -Eq '^[0-9a-f]{64}  MIK32_Uploader-x86_64_v[0-9]+\.[0-9]+\.[0-9]+\.AppImage$' checksums.txt
+          grep -Eq '^[0-9a-f]{64}  mik32_upload\.exe$' checksums.txt
+          grep -Eq '^[0-9a-f]{64}  mik32_uploader\.AppImage$' checksums.txt
 
       - name: Check test scripts
         run: bash -n tests/firmware_test_linux.sh

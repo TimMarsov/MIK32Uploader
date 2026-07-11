@@ -12,7 +12,7 @@
 Проверьте права на запуск:
 
 ```bash
-chmod +x MIK32_Uploader-x86_64_v1.0.0.AppImage
+chmod +x mik32_uploader.AppImage
 ```
 
 Если система сообщает об ошибке FUSE, установите пакет совместимости AppImage для вашего дистрибутива.

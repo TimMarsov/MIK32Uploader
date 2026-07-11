@@ -10,7 +10,7 @@ set "SCRIPT_DIR=%~dp0"
 for %%I in ("%SCRIPT_DIR%..") do set "REPO_ROOT=%%~fI"
 
 REM Paths can be overridden before launch:
-REM   set UPLOADER_EXE=C:\path\to\mik32_upload_v1.0.0.exe
+REM   set UPLOADER_EXE=C:\path\to\mik32_upload.exe
 REM   set OPENOCD_BIN=C:\path\to\openocd.exe
 REM   set OPENOCD_SCRIPTS=C:\path\to\openocd-scripts
 REM   set INTERFACE_CFG=C:\path\to\interface.cfg
@@ -19,7 +19,7 @@ REM   set EEPROM_FILE=C:\path\to\eeprom.hex
 REM   set FLASH_FILE=C:\path\to\spifi.hex
 REM   set RAM_FILE=C:\path\to\ram.hex
 
-if not defined UPLOADER_EXE set "UPLOADER_EXE=%REPO_ROOT%\release\mik32_upload_v1.0.0.exe"
+if not defined UPLOADER_EXE set "UPLOADER_EXE=%REPO_ROOT%\release\mik32_upload.exe"
 
 if not defined OPENOCD_BIN set "OPENOCD_BIN=openocd.exe"
 if not exist "%OPENOCD_BIN%" set "OPENOCD_BIN=openocd.exe"

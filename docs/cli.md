@@ -3,7 +3,7 @@
 MIK32 Flasher можно использовать из командной строки.
 
 ```powershell
-.\mik32_upload_v1.0.0.exe --help
+.\mik32_upload.exe --help
 ```
 
 ## Использование
@@ -67,17 +67,17 @@ spifi           BOOT-сегменты записываются во внешню
 Запустить OpenOCD из программы и прошить HEX в EEPROM:
 
 ```powershell
-.\mik32_upload_v1.0.0.exe firmware.hex --run-openocd --boot-mode eeprom
+.\mik32_upload.exe firmware.hex --run-openocd --boot-mode eeprom
 ```
 
 Прошить ELF в RAM и продолжить выполнение с адреса RAM-программы:
 
 ```powershell
-.\mik32_upload_v1.0.0.exe firmware.elf --run-openocd --boot-mode ram --post-action "resume 0x02000000"
+.\mik32_upload.exe firmware.elf --run-openocd --boot-mode ram --post-action "resume 0x02000000"
 ```
 
 Подключиться к уже запущенному OpenOCD:
 
 ```powershell
-.\mik32_upload_v1.0.0.exe firmware.bin --openocd-host 127.0.0.1 --openocd-port 6666 --boot-mode spifi
+.\mik32_upload.exe firmware.bin --openocd-host 127.0.0.1 --openocd-port 6666 --boot-mode spifi
 ```

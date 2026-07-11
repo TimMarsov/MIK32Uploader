@@ -7,8 +7,8 @@
 ## Файлы релиза
 
 ```text
-mik32_upload_v1.0.0.exe
-MIK32_Uploader-x86_64_v1.0.0.AppImage
+mik32_upload.exe
+mik32_uploader.AppImage
 checksums.txt
 SECURITY.md
 tests/

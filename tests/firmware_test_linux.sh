@@ -11,14 +11,14 @@ ROOT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 REPO_ROOT="$(cd -- "$ROOT_DIR/.." && pwd)"
 
 # Paths can be overridden before launch:
-#   UPLOADER_EXE=/path/to/MIK32_Uploader-x86_64_v1.0.0.AppImage
+#   UPLOADER_EXE=/path/to/mik32_uploader.AppImage
 #   OPENOCD_BIN=/path/to/openocd
 #   OPENOCD_SCRIPTS=/path/to/openocd-scripts
 #   EEPROM_FILE=/path/to/eeprom.hex
 #   FLASH_FILE=/path/to/spifi.hex
 #   RAM_FILE=/path/to/ram.hex
 
-UPLOADER_EXE="${UPLOADER_EXE:-$REPO_ROOT/release/MIK32_Uploader-x86_64_v1.0.0.AppImage}"
+UPLOADER_EXE="${UPLOADER_EXE:-$REPO_ROOT/release/mik32_uploader.AppImage}"
 if [[ ! -x "$UPLOADER_EXE" && -x "$REPO_ROOT/release/mik32_upload" ]]; then
     UPLOADER_EXE="$REPO_ROOT/release/mik32_upload"
 fi

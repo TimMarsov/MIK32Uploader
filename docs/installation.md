@@ -2,24 +2,24 @@
 
 ## Windows
 
-1. Скачайте `mik32_upload_v1.0.0.exe` из GitHub Releases.
+1. Скачайте `mik32_upload.exe` из GitHub Releases.
 2. Запустите приложение.
 
-Если Windows показывает предупреждение SmartScreen или Microsoft Defender, проверьте, что файл скачан именно из этого репозитория, а SHA-256 совпадает с [../checksums.txt](../checksums.txt). Для Windows-сборки также опубликован [VirusTotal report](https://www.virustotal.com/gui/file/4470fed452f1ef0e9ba1cbf78211f6f7b349b2f806bf78a7b52b4eb0f30c750b).
+Если Windows показывает предупреждение SmartScreen или Microsoft Defender, проверьте, что файл скачан именно из этого репозитория, а SHA-256 совпадает с [../checksums.txt](../checksums.txt). Для Windows-сборки также опубликован [VirusTotal report](https://www.virustotal.com/gui/file/4bd81ce8813e56d351403f59b6e534d1c8c302e3960373b93cdbf3c2eeec5d34).
 
 ## Linux
 
-1. Скачайте `MIK32_Uploader-x86_64_v1.0.0.AppImage` из GitHub Releases.
+1. Скачайте `mik32_uploader.AppImage` из GitHub Releases.
 2. Выдайте права на запуск:
 
 ```bash
-chmod +x MIK32_Uploader-x86_64_v1.0.0.AppImage
+chmod +x mik32_uploader.AppImage
 ```
 
 3. Запустите AppImage:
 
 ```bash
-./MIK32_Uploader-x86_64_v1.0.0.AppImage
+./mik32_uploader.AppImage
 ```
 
 ## Проверка файла
@@ -37,6 +37,6 @@ sha256sum -c checksums.txt
 Windows PowerShell:
 
 ```powershell
-Get-FileHash -Algorithm SHA256 .\mik32_upload_v1.0.0.exe
-Get-FileHash -Algorithm SHA256 .\MIK32_Uploader-x86_64_v1.0.0.AppImage
+Get-FileHash -Algorithm SHA256 .\mik32_upload.exe
+Get-FileHash -Algorithm SHA256 .\mik32_uploader.AppImage
 ```

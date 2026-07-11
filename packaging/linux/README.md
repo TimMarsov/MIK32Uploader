@@ -3,7 +3,7 @@
 Публичный файл:
 
 ```text
-MIK32_Uploader-x86_64_v1.0.0.AppImage
+mik32_uploader.AppImage
 ```
 
 ## Перед публикацией
@@ -11,7 +11,7 @@ MIK32_Uploader-x86_64_v1.0.0.AppImage
 1. Выдать права на запуск:
 
 ```bash
-chmod +x MIK32_Uploader-x86_64_v1.0.0.AppImage
+chmod +x mik32_uploader.AppImage
 ```
 
 2. Запустить AppImage на чистой системе или виртуальной машине Linux.
@@ -21,7 +21,7 @@ chmod +x MIK32_Uploader-x86_64_v1.0.0.AppImage
 6. При наличии тестовой платы прогнать автотест из корня репозитория:
 
 ```bash
-UPLOADER_EXE=./release/MIK32_Uploader-x86_64_v1.0.0.AppImage \
+UPLOADER_EXE=./release/mik32_uploader.AppImage \
 OPENOCD_BIN=/usr/bin/openocd \
 OPENOCD_SCRIPTS=/opt/openocd-scripts \
 EEPROM_FILE=/path/to/eeprom.hex \
@@ -33,7 +33,7 @@ RAM_FILE=/path/to/ram.hex \
 7. Посчитать SHA-256 из корня репозитория:
 
 ```bash
-sha256sum release/MIK32_Uploader-x86_64_v1.0.0.AppImage
+sha256sum release/mik32_uploader.AppImage
 ```
 
 8. Обновить `checksums.txt` и `SECURITY.md`.

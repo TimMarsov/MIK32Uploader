@@ -2,8 +2,8 @@
 
 ## Скачать
 
-- Windows: `mik32_upload_vX.Y.Z.exe`
-- Linux: `MIK32_Uploader-x86_64_vX.Y.Z.AppImage`
+- Windows: `mik32_upload.exe`
+- Linux: `mik32_uploader.AppImage`
 - Checksums: `checksums.txt`
 - Security and verification: `SECURITY.md`
 

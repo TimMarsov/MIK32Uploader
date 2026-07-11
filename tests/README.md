@@ -23,7 +23,7 @@
 Пример запуска:
 
 ```bat
-set UPLOADER_EXE=..\release\mik32_upload_v1.0.0.exe
+set UPLOADER_EXE=..\release\mik32_upload.exe
 set OPENOCD_BIN=C:\tools\openocd\bin\openocd.exe
 set OPENOCD_SCRIPTS=C:\tools\openocd-scripts
 set INTERFACE_CFG=C:\tools\openocd-scripts\interface\KoteLink.cfg
@@ -42,7 +42,7 @@ tests/firmware/eeprom.hex
 tests/firmware/spifi.hex
 tests/firmware/ram.hex
 tests/openocd-scripts/
-release/mik32_upload_v1.0.0.exe
+release/mik32_upload.exe
 ```
 
 ## Linux
@@ -53,7 +53,7 @@ release/mik32_upload_v1.0.0.exe
 
 ```bash
 chmod +x tests/firmware_test_linux.sh
-UPLOADER_EXE=./release/MIK32_Uploader-x86_64_v1.0.0.AppImage \
+UPLOADER_EXE=./release/mik32_uploader.AppImage \
 OPENOCD_BIN=/usr/bin/openocd \
 OPENOCD_SCRIPTS=/opt/openocd-scripts \
 INTERFACE_CFG=/opt/openocd-scripts/interface/KoteLink.cfg \
@@ -72,7 +72,7 @@ tests/firmware/eeprom.hex
 tests/firmware/spifi.hex
 tests/firmware/ram.hex
 tests/openocd-scripts/
-release/MIK32_Uploader-x86_64_v1.0.0.AppImage
+release/mik32_uploader.AppImage
 ```
 
 ## Повторные прогоны

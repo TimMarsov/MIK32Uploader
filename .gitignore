@@ -5,3 +5,5 @@
 # Local build/package scratch space.
 dist/
 release/
+.preview/
+RELEASE_NOTES_v1.0.1.md

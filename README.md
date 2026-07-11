@@ -5,7 +5,7 @@
 ---
 
 <p align="center">
-  <img src="images/devboard3.gif" alt="MIK32 devboard demo" width="560" style="border-radius: 8px;"/>
+  <img src="images/devboard2.gif" alt="MIK32 devboard demo" width="560" style="border-radius: 8px;"/>
 </p>
 
 <p align="center">
@@ -20,16 +20,16 @@ MIK32 Flasher записывает и верифицирует прошивки 
 Готовые сборки публикуются в GitHub Releases:
 
 ```text
-Mik32_upload_v1.0.0.exe
-MIK32_Uploader-x86_64_v1.0.0.AppImage
+mik32_upload.exe
+mik32_uploader.AppImage
 ```
 
 Контрольные суммы SHA-256 опубликованы в [checksums.txt](checksums.txt). Файл можно положить рядом со скачанными release assets и проверить их командой ниже.
 
 Перед запуском можно проверить файл по SHA-256 и сверить опубликованную проверку:
 
-* Windows EXE: [VirusTotal report](https://www.virustotal.com/gui/file/4470fed452f1ef0e9ba1cbf78211f6f7b349b2f806bf78a7b52b4eb0f30c750b)
-* Linux AppImage: [VirusTotal report](https://www.virustotal.com/gui/file/e20de51d972366e11f397c7b5b6dab003cda035576f6f2c7a6711286af18646a)
+* Windows EXE: [VirusTotal report](https://www.virustotal.com/gui/file/4bd81ce8813e56d351403f59b6e534d1c8c302e3960373b93cdbf3c2eeec5d34)
+* Linux AppImage: [VirusTotal report](https://www.virustotal.com/gui/file/58de101e5f054303539bb87f25193c58e0685dac31d8e6f2c8a545662a88a188)
 * Подробности: [SECURITY.md](SECURITY.md)
 
 > [!IMPORTANT]
@@ -72,7 +72,6 @@ MIK32_Uploader-x86_64_v1.0.0.AppImage
 * [Поддержка проекта](SUPPORT.md)
 * [Проверка безопасности](SECURITY.md)
 * [Лицензионные условия](EULA.md)
-* [Сторонние компоненты](THIRD_PARTY_LICENSES.md)
 
 ## Основные поля
 
@@ -98,25 +97,8 @@ sha256sum -c checksums.txt
 Windows PowerShell:
 
 ```powershell
-Get-FileHash -Algorithm SHA256 .\mik32_upload_v1.0.0.exe
-Get-FileHash -Algorithm SHA256 .\MIK32_Uploader-x86_64_v1.0.0.AppImage
-```
-
-## Структура репозитория
-
-```text
-.github/                  Шаблоны issue, release template и проверки репозитория
-docs/                     Пользовательская документация
-icons/                    Иконки проекта
-images/                   Изображения для README и документации
-packaging/                Чеклисты подготовки Windows/Linux сборок
-tests/                    Публичные автотесты записи и верификации прошивок
-checksums.txt             SHA-256 суммы опубликованных бинарников
-SECURITY.md               Проверка файлов, SHA-256, VirusTotal и предупреждения SmartScreen/Defender
-SUPPORT.md                Контакты, поддержка и обратная связь
-EULA.md                   Условия использования бинарных сборок
-NOTICE.md                 Краткое уведомление о распространении
-THIRD_PARTY_LICENSES.md   Информация о сторонних компонентах
+Get-FileHash -Algorithm SHA256 .\mik32_upload.exe
+Get-FileHash -Algorithm SHA256 .\mik32_uploader.AppImage
 ```
 
 ## 🎛 Отладочная плата
